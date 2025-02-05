@@ -55,34 +55,15 @@ section:not(:last-child) {
 }
 
 #about {
-    background-color: #006eff;
+    background-color: #00bfd8;
 }
 
 #game {
-    background-color: #00bfd8; 
+    background-color: #006eff; 
 }
 
 #contact {
     background-color: #ffe261;
-}
-
-.game-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.game {
-    width: 300px;
-    margin: 1rem;
-    border: 1px solid #fff; /* White border for game cards */
-    padding: 1rem;
-    text-align: center;
-}
-
-.game img {
-    max-width: 100%;
-    height: auto;
 }
 
 footer {
