@@ -35,39 +35,41 @@ nav a {
 }
 
 main {
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 section {
     padding-top: 0.5rem;
-    padding-left: 1rem;
     padding-bottom: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /*section seperator*/
 section:not(:last-child) {
-    border-bottom: 10px solid #ffffff;
     min-height: 100vh;
 }
 
 #home {
-    padding-top: 1rem; 
+    border-bottom: 10px solid #ffffff
 }
 
 #about {
     background-color: #00bfd8;
+    border-bottom: 10px solid #ffffff
 }
 
 #game {
-    background-color: #006eff; 
+    background-color: #006eff;
+    border-bottom: 10px solid #ffffff
 }
 
 #contact {
-    background-color: #ffe261;
+    background-color: #ce9e00;
 }
 
 footer {
-    background-color: #313131; /* Dark blue footer */
+    background-color: #313131;
     color: #fff;
     text-align: center;
     padding: 1rem;

@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tidal Rush Digital</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>Toybox Tactics</a></li> 
-                <li><a>About</a></li>
-                <li><a>Contact Us</a></li>
+                <li *ngFor="let section of sections"> <a href="" (click)="scrollTo(section.id)">{{ section.title }}</a> </li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home">
-            <h1>Tidal Rush Digital (placeholder for logo)</h1>
+            <h2>Tidal Rush Digital (placeholder for logo)</h2>
             <p>Crafting immersive gaming experiences.</p>
         </section>
         <section id="game">
