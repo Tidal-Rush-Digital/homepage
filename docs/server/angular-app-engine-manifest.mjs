@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/WebsiteAngularSPA',
+  basePath: '/homepage',
   supportedLocales: {
   "en-US": ""
 },
