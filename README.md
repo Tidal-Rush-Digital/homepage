@@ -41,7 +41,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 First run a build specifying href:
 
 ```bash
-ng build --base-href ""https://Tidal-Rush-Digital.github.io/homepage/"
+ng build --base-href "https://Tidal-Rush-Digital.github.io/homepage/"
 ```
 
 Then publish the site to pages:

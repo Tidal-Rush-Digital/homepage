@@ -15,7 +15,7 @@ export class AppComponent {
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
-        block: 'start' // or 'center', 'end', 'nearest'
+        block: 'center' // or 'center', 'end', 'nearest'
       });
     } else {
       console.error(`Element with ID '${id}' not found.`);
@@ -34,4 +34,3 @@ interface Section { // Define the Section interface outside the class
   id: string;
   title: string;
 }
-
