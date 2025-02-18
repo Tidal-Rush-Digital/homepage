@@ -9,7 +9,7 @@
     <header>
         <nav>
             <ul>
-                <li *ngFor="let section of sections"> <a href="" (click)="scrollTo(section.id)">{{ section.title }}</a> </li>
+                <li *ngFor="let section of sections"> <button (click)="scrollTo(section.id)">{{ section.title }}</button> </li>
             </ul>
         </nav>
     </header>
@@ -20,7 +20,16 @@
         </section>
         <section id="game">
             <h2>Toybox Tactics</h2>
-            <p>Learn more about our flagship game.</p>
+            <p>
+                A tactics game that’s both unpredictable and controlled. Rolling plans with changing unit abilities: move, attack, and reroll your units’ actions for an opportunity at greatness. For strategy noobs and vets alike, take your chance and roll the dice in Toybox Tactics.
+            </p>
+            <div class="image-slider">
+                <button class="left-arrow"></button>
+                <div class="image-container">
+                    <img src="/src/assets/Matthew_TBT_TitleScreen_TextAndBackground.png">
+                </div>
+                <button class="right-arrow"></button>
+            </div>
         </section>
         <section id="about">
             <h2>About Us</h2>
