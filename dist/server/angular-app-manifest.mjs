@@ -2,19 +2,19 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/',
+  baseHref: 'https://Tidal-Rush-Digital.github.io/homepage/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/homepage"
+    "route": "/https://Tidal-Rush-Digital.github.io/homepage"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 509, hash: '7f9c3da9e8905dfbd3cc05bb039af87ae53d5fd6308dba5b9800f258f504426e', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1022, hash: 'b28b5d4bfb9f9118c79151b3c320ae96325bbf33436694648ead2bf930cb6170', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'homepage/index.html': {size: 5148, hash: '4c138a0b05355b2dccc0003674c41572a208d3873270a107957dd49d5e749b43', text: () => import('./assets-chunks/homepage_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 545, hash: 'e8c2019c907bb14057cd73e8c10f50af5ca108333dffa484e6b6592deb153acc', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1058, hash: 'cc3946a37eee72ecca4152e7c799a9009012c313302f0297c75ee2c16bb6aa2f', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 5184, hash: 'e7e3afb6ed58ab52af125fa3048b5f8ef6175f783df1c1e08e06af4af1a5fb36', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
     'styles-5INURTSO.css': {size: 0, hash: 'menYUTfbRu8', text: () => import('./assets-chunks/styles-5INURTSO_css.mjs').then(m => m.default)}
   },
 };

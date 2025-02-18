@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: 'https://Tidal-Rush-Digital.github.io/homepage',
   supportedLocales: {
   "en-US": ""
 },
