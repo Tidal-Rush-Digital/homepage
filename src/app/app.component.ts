@@ -13,9 +13,11 @@ export class AppComponent {
   scrollTo(id: string): void {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center' // or 'center', 'end', 'nearest'
+      const padding = 50;
+      const offsetTop = element.offsetTop - padding;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
       });
     } else {
       console.error(`Element with ID '${id}' not found.`);

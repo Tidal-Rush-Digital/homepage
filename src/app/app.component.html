@@ -1,48 +1,47 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tidal Rush Digital</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li *ngFor="let section of sections"> <button class="navbutton" (click)="scrollTo(section.id)">{{ section.title }}</button> </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Tidal Rush Digital (placeholder for logo)</h2>
-            <p>Crafting immersive gaming experiences.</p>
-        </section>
-        <section id="game">
-            <h2>Toybox Tactics</h2>
-            <p>
-                A tactics game that’s both unpredictable and controlled. Rolling plans with changing unit abilities: move, attack, and reroll your units’ actions for an opportunity at greatness. For strategy noobs and vets alike, take your chance and roll the dice in Toybox Tactics.
-            </p>
-            <div class="image-slider">
-                <button class="left-arrow"></button>
-                <div class="image-container">
-                    <img src="/src/assets/Matthew_TBT_TitleScreen_TextAndBackground.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tidal Rush Digital</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li *ngFor="let section of sections"> <button class="navbutton" (click)="scrollTo(section.id)">{{ section.title }}</button> </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Tidal Rush Digital (placeholder for logo)</h2>
+                <p>Crafting immersive gaming experiences.</p>
+            </section>
+            <section id="game">
+                <h2>Toybox Tactics</h2>
+                <p>
+                    A tactics game that’s both unpredictable and controlled. Rolling plans with changing unit abilities: move, attack, and reroll your units’ actions for an opportunity at greatness. For strategy noobs and vets alike, take your chance and roll the dice in Toybox Tactics.
+                </p>
+                <div class="image-slider">
+                    <button class="left-arrow">&#60;</button>
+                    <div class="image-container">
+                        <img src="Matthew_TBT_TitleScreen_TextAndBackground.png">
+                    </div>
+                    <button class="right-arrow">&#62;</button>
                 </div>
-                <button class="right-arrow"></button>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a passionate team of game developers dedicated to creating unique and engaging games.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us!</h2>
-            <p>Email: tidalrushdigital&#64;gmail.com</p>
-            <p>Social Media: [Link to social media pages]</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Tidal Rush Digital</p>
-    </footer>
-</body>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are a passionate team of game developers dedicated to creating unique and engaging games.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Us!</h2>
+                <p>Email: tidalrushdigital&#64;gmail.com</p>
+                <p>Social Media: [Link to social media pages]</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Tidal Rush Digital</p>
+        </footer>
+    </body>
 </html>
