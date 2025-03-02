@@ -18,26 +18,51 @@
                 <p>Crafting immersive gaming experiences.</p>
             </section>
             <section id="game">
-                <h2>Toybox Tactics</h2>
-                <p>
-                    A tactics game that’s both unpredictable and controlled. Rolling plans with changing unit abilities: move, attack, and reroll your units’ actions for an opportunity at greatness. For strategy noobs and vets alike, take your chance and roll the dice in Toybox Tactics.
-                </p>
-                <div class="image-slider">
-                    <button class="left-arrow">&#60;</button>
-                    <div class="image-container">
-                        <img src="Matthew_TBT_TitleScreen_TextAndBackground.png">
-                    </div>
-                    <button class="right-arrow">&#62;</button>
+            <h2>Toybox Tactics</h2>
+
+            <div class="slider-container">
+                <div class="slider-dots">
+                <span *ngFor="let dot of slides; let i = index" 
+                        (click)="goToSlide(i)" 
+                        [class.active]="currentSlide === i"></span>
                 </div>
+
+                <div class="slider-wrapper">
+                <button class="slider-arrow left" (click)="nextSlide()">
+                    &lt;
+                </button>
+
+                <div class="slider-track" [style.transform]="'translateX(' + (-currentSlide * 100) + '%)'">
+                    <div *ngFor="let slide of slides" class="slide">
+                    <div class="slider-content">
+                        <img [src]="slide.image" alt="Slide Image">
+                        <p class="slide-text">{{ slide.text }}</p>
+                    </div>
+                    </div>
+                </div>
+
+                <button class="slider-arrow right" (click)="nextSlide()">
+                    &gt;
+                </button>
+                </div>
+            </div>
             </section>
             <section id="about">
                 <h2>About Us</h2>
                 <p>We are a passionate team of game developers dedicated to creating unique and engaging games.</p>
+                <ul class="profiles">
+                    <li *ngFor="let profile of profiles" class="profiles"><img [src]="profile.image"><p>{{profile.text}}</p></li>
+                </ul>
             </section>
             <section id="contact">
                 <h2>Contact Us!</h2>
                 <p>Email: tidalrushdigital&#64;gmail.com</p>
-                <p>Social Media: [Link to social media pages]</p>
+                <p>Socials:</p>
+                <ul class="socials">
+                    <li class="socials" href="">X</li>
+                    <li class="socials" href="">Instagram</li>
+                    <li class="socials" href="">Placeholder</li>
+                </ul>
             </section>
         </main>
         <footer>
