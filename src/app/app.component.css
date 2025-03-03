@@ -155,6 +155,7 @@ html {
 
 .left {
   left: 0;
+  z-index: 10;
 }
 
 .right {
@@ -215,7 +216,16 @@ html {
 }
 
 .socials {
-  list-style: none;
-  margin-right: 50px;
-  margin-left: 30px;
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Make list items display horizontally */
+  justify-content: center; /* Center the icons */
+}
+
+.socials li {
+  margin: 0 10px; /* Add spacing between icons */
+}
+
+.socials img {
+  width: 32px; /* Adjust icon size as needed */
+  height: 32px;
 }
