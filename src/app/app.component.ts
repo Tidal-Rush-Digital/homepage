@@ -111,10 +111,10 @@ export class AppComponent {
   profiles: Profile[] = [
     {
       image: 'Jack.png',
-      text: 'Jack Bio.'
+      text: ''
     },
     {
-      image: 'Zach.png', // Replace with your image paths
+      image: 'Zach.jpg', // Replace with your image paths
       text: 'Zach Bio.'
     },
     {
