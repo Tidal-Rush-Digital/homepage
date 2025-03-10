@@ -6,11 +6,23 @@
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li *ngFor="let section of sections"> <button class="navbutton" (click)="scrollTo(section.id)">{{ section.title }}</button> </li>
-                </ul>
-            </nav>
+        <nav>
+            <ul *ngIf="!isMobile" class="desktop-menu">
+                <li *ngFor="let section of sections">
+                    <button class="navbutton" (click)="scrollTo(section.id)">{{ section.title }}</button>
+                </li>
+            </ul>
+            <ul *ngIf="isMobile">
+                <button class="hamburger-button" (click)="toggleMenu()">
+                    <img src="hamburger.svg" alt="Menu">
+                </button>
+            </ul>
+            <ul *ngIf="showMenu && isMobile" class="mobile-menu">
+                <li *ngFor="let section of sections">
+                    <button class="navbutton" (click)="scrollTo(section.id)">{{ section.title }}</button>
+                </li>
+            </ul>
+        </nav>
         </header>
         <main>
             <section id="home">
@@ -58,9 +70,9 @@
                 <h2>Contact Us!</h2>
                 <p>Email: tidalrushdigital&commat;gmail.com</p>
                 <ul class="socials">
-                    <li class="socials"><a href="https://www.twitter.com"><img src="twitter-icon.svg" alt="Twitter"></a></li>
-                    <li class="socials"><a href="https://www.instagram.com"><img src="instagram-icon.svg" alt="Instagram"></a></li>
-                    <li class="socials"><a href="https://www.facebook.com"><img src="facebook-icon.svg" alt="Facebook"></a></li>
+                    <li class="socials"><a href="https://www.twitter.com"><img src="X.svg" alt="X"></a></li>
+                    <li class="socials"><a href="https://www.instagram.com"><img src="instagram.svg" alt="Instagram"></a></li>
+                    <li class="socials"><a href="https://www.facebook.com"><img src="facebook.svg" alt="Facebook"></a></li>
                 </ul>
             </section>
         </main>

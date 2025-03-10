@@ -1,9 +1,13 @@
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #00008b; /* Dark blue background */
     color: #fff; /* White text color */
 }
 
@@ -14,97 +18,110 @@ header {
     position: fixed; 
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  position: static;
+  top: 3px; /* Adjust position as needed */
+  left: 10px; /* Adjust position as needed */
+  z-index: 10; /* Ensure it's on top */
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  margin-right: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbutton {
-    background-color: #00008b;
-    border-color:#0105f536;
-    border-style: solid;
-    color: #fff;
-    padding: 8px;
-    border-radius: 12px;
-    text-align: center;
-    font-size: small;
-    width: 130px;
-    transition-duration: 0.6s;
+  background-color: #00008b;
+  border-color:#0105f536;
+  border-style: solid;
+  color: #fff;
+  padding: 8px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: small;
+  width: 130px;
+  transition-duration: 0.6s;
 }
 
 .navbutton:hover {
-    color: black;
-    background-color: #fff;
+  color: black;
+  background-color: #fff;
 }
 
 main {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 section {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    vertical-align: middle;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /*section seperator*/
 section:not(:last-child) {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 #home {
-    border-bottom: 10px solid #ffffff
+  font-size: large;
+  display: flex; /* Make the section a flex container */
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  background-image: url("/wave-desktop.jpeg");
+  background-size: 100%;
+  border-bottom: 10px solid #ffffff;
 }
 
 #about {
-    background-color: #00bfd8;
-    border-bottom: 10px solid #ffffff
+  background-color: #00bfd8;
+  border-bottom: 10px solid #ffffff
 }
 
 #game {
-    background-color: #006eff;
-    border-bottom: 10px solid #ffffff
+  background-color: #006eff;
+  border-bottom: 10px solid #ffffff
 }
 
 #contact {
-    background-color: #ce9e00;
+  background-color: #ce9e00;
 }
 
 footer {
-    background-color: #313131;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: relative; 
-    bottom: 0; 
-    width: 100%; 
+  background-color: #313131;
+  color: #fff;
+  text-align: center;
+  text-indent: -40px;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%; 
+  margin-right: 30px;
 }
 
 a:hover {
-    color: #87CEFA; 
+  color: #87CEFA; 
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* ... (rest of your CSS) ... */
 
 /* Slider CSS */
 .slider-container {
@@ -155,7 +172,7 @@ html {
 
 .left {
   left: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .right {
@@ -178,7 +195,7 @@ html {
 }
 
 .slider-content img {
-  max-width: 60%;
+  max-width: 55%;
   max-height: 50%;
   display: block;
   margin: 0 auto 10px;
@@ -219,6 +236,7 @@ html {
   list-style: none; /* Remove default list styling */
   display: flex; /* Make list items display horizontally */
   justify-content: center; /* Center the icons */
+  margin-right: 35px;
 }
 
 .socials li {
@@ -228,4 +246,104 @@ html {
 .socials img {
   width: 32px; /* Adjust icon size as needed */
   height: 32px;
+}
+
+.desktop-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px; /* Adjust position as needed */
+  left: 0;
+  width: 100%;
+  background-color: #00004d; /* Match header background */
+  text-align: center;
+}
+
+.mobile-menu li {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  /* Styles for smaller screens */
+
+  nav ul {
+    flex-direction: column; /* Stack navbar items vertically */
+    margin-right: 35px;
+  }
+
+  header {
+    height: 35px;
+    justify-content: center;
+  }
+
+  .navbutton {
+    font-size: 14px; /* Reduce font size */
+    padding: 6px; /* Reduce padding */
+    margin-right: 30px;
+  }
+
+  #home {
+    background-image: url("/wave-mobile.jpeg");
+    background-size: 100%;
+  }
+
+  .slider-content img {
+    max-width: 80%; /* Make images responsive */
+    height: auto;
+  }
+
+  .slide-text {
+    font-size: 14px; /* Reduce text size */
+    margin-left: 20px; /* Adjust margins */
+    margin-right: 20px;
+  }
+
+  #about p {
+    padding: 4px;
+  }
+
+  .profiles img {
+    max-width: 50%; /* Adjust image size */
+  }
+
+  .socials img {
+    width: 24px; /* Reduce icon size */
+    height: 24px;
+  }
+
+  .desktop-menu {
+    display: none; /* Hide desktop menu on mobile */
+  }
+
+  .hamburger-button {
+    position: static; /* Center the button */
+    margin-top: 0;
+  }
+
+  .mobile-menu {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 60px; /* Adjust position as needed */
+    left: 0;
+    width: 100%;
+    background-color: #00004d; /* Match header background */
+    text-align: center;
+    max-height: 0; /* Initially hide the menu */
+    overflow: hidden; /* Prevent content from overflowing */
+    /*transition: max-height 0.5s ease-in-out; Add transition for max-height */
+  }
+
+  .mobile-menu.show { /* Style for when the menu is open */
+    max-height: 250px; /* Adjust this value as needed */
+  }
 }

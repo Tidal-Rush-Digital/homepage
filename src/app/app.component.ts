@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 
 interface Section {
   id: string;
@@ -25,6 +25,64 @@ interface Profile {
 export class AppComponent {
   title = 'TidalRushDigital';
   currentSlide = 0;
+  showMenu = true; // Initially show the menu
+  isMobile = false;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: any) {
+    this.checkIsMobile();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkIsMobile();
+  }
+
+  checkIsMobile() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.isMobile = window.innerWidth <= 768; // Adjust breakpoint if needed
+    }
+  }
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+
+    setTimeout(() => {
+      const mobileMenu = document.querySelector('.mobile-menu') as HTMLElement;
+      if (mobileMenu) {
+        if (this.showMenu) {
+          mobileMenu.classList.add('show');
+        } else {
+          mobileMenu.classList.remove('show');
+        }
+      }
+    }, 25); // Adjust delay as needed
+  }
+
+  scrollTo(id: string): void {
+    const element = document.getElementById(id);
+    if (element) {
+      const padding = 50;
+      const offsetTop = element.offsetTop - padding;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    } else {
+      console.error(`Element with ID '${id}' not found.`);
+    }
+  }
+
+  prevSlide(): void {
+    this.currentSlide = (this.currentSlide === 0) ? this.slides.length - 1 : this.currentSlide - 1;
+  }
+
+  nextSlide(): void {
+    this.currentSlide = (this.currentSlide === this.slides.length - 1) ? 0 : this.currentSlide + 1;
+  }
+
+  goToSlide(index: number): void {
+    this.currentSlide = index;
+  }
 
   slides: Slide[] = [
     {
@@ -41,38 +99,12 @@ export class AppComponent {
     }
   ];
 
-  scrollTo(id: string): void {
-    const element = document.getElementById(id);
-    if (element) {
-      const padding = 50;
-      const offsetTop = element.offsetTop - padding;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
-    } else {
-      console.error(`Element with ID '${id}' not found.`);
-    }
-  }
-
   sections: Section[] = [
     { id: 'home', title: 'Home' },
     { id: 'game', title: 'Toybox Tactics' },
     { id: 'about', title: 'About Us' },
     { id: 'contact', title: 'Contact Us' }
   ];
-
-  prevSlide(): void {
-    this.currentSlide = (this.currentSlide === 0) ? this.slides.length - 1 : this.currentSlide - 1;
-  }
-
-  nextSlide(): void {
-    this.currentSlide = (this.currentSlide === this.slides.length - 1) ? 0 : this.currentSlide + 1;
-  }
-
-  goToSlide(index: number): void {
-    this.currentSlide = index;
-  }
 
   profiles: Profile[] = [
     {
