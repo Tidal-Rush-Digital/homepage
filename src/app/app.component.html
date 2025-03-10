@@ -25,8 +25,8 @@
         </nav>
         </header>
         <main>
-            <section id="home">
-                <h2>Tidal Rush Digital (placeholder for logo)</h2>
+            <section id="home" [ngStyle]="{ 'background-image': isMobile ? 'url(' + mobileImageUrl + ')' : 'url(' + desktopImageUrl + ')' }">
+                <h2>Tidal Rush Digital</h2>
                 <p>Crafting immersive gaming experiences.</p>
             </section>
             <section id="game">

@@ -27,6 +27,8 @@ export class AppComponent {
   currentSlide = 0;
   showMenu = true; // Initially show the menu
   isMobile = false;
+  mobileImageUrl = 'wave-mobile.jpeg';
+  desktopImageUrl = 'wave-desktop.jpeg';
 
   constructor(@Inject(PLATFORM_ID) private platformId: any) {
     this.checkIsMobile();

@@ -89,7 +89,6 @@ section:not(:last-child) {
   flex-direction: column; /* Stack the content vertically */
   justify-content: center; /* Center content vertically */
   align-items: center;
-  background-image: url("/wave-desktop.jpeg");
   background-size: 100%;
   border-bottom: 10px solid #ffffff;
 }
@@ -289,11 +288,6 @@ a:hover {
     font-size: 14px; /* Reduce font size */
     padding: 6px; /* Reduce padding */
     margin-right: 30px;
-  }
-
-  #home {
-    background-image: url("/wave-mobile.jpeg");
-    background-size: 100%;
   }
 
   .slider-content img {
