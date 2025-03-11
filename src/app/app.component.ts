@@ -97,7 +97,7 @@ export class AppComponent {
     },
     {
       image: 'EpicGamerScreenshot.png', // Replace with your image paths
-      text: 'Choose from three distinct factions: the Prehistoric Tribe, a hardy alliance of domesticated dinosaurs and powerful cavemen; the Futurists, a high-tech army of swift mechs and Sci-Fi soldiers that live and die by their supply trucks; or the Necro-Plushies, a relentless horde of undead plush toys led by the formidable necromancer Ester [pictured].'
+      text: 'Choose from three distinct factions: the Prehistoric Tribe, a hardy alliance of domesticated dinosaurs and powerful cavemen; the Futurists, a high-tech army of swift mechs and sci-fi soldiers that live and die by their supply trucks; or the Necro-Plushies, a relentless horde of undead plush toys led by the formidable necromancer Ester [pictured].'
     }
   ];
 
