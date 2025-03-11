@@ -89,8 +89,9 @@ section:not(:last-child) {
   flex-direction: column; /* Stack the content vertically */
   justify-content: center; /* Center content vertically */
   align-items: center;
-  background-size: 100%;
+  background-size: cover;
   border-bottom: 10px solid #ffffff;
+  background-repeat: no-repeat;
 }
 
 .title-container {
@@ -123,8 +124,9 @@ section:not(:last-child) {
   flex-direction: column; /* Stack the content vertically */
   justify-content: top; /* Center content vertically */
   align-items: center;
-  background-size: 100%;
+  background-size: cover;
   background-position: 2px;
+  background-repeat: no-repeat;
 }
 
 #contact p:hover {
@@ -149,7 +151,7 @@ a:hover {
 
 /* Slider CSS */
 .slider-container {
-  width: 80%;
+  width: 95%;
   margin: 20px auto;
   text-align: center;
   overflow: hidden; /* Prevent horizontal overflow */
