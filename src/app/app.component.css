@@ -204,7 +204,7 @@ a:hover {
 }
 
 .slider-track {
-  display: flex; /* Arrange slides horizontally */
+  display: flex;
   transition: transform 0.5s ease-in-out; /* Add transition effect */
 }
 
@@ -305,8 +305,6 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-  /* Styles for smaller screens */
-
   nav ul {
     flex-direction: column; /* Stack navbar items vertically */
     margin-right: 35px;
