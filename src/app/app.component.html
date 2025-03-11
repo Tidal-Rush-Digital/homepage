@@ -26,8 +26,9 @@
         </header>
         <main>
             <section id="home" [ngStyle]="{ 'background-image': isMobile ? 'url(' + mobileImageUrl + ')' : 'url(' + desktopImageUrl + ')' }">
-                <h2>Tidal Rush Digital</h2>
-                <p>Crafting immersive gaming experiences.</p>
+                <div class="title-container">
+                    <img id="title" src="TRD.png">
+                </div>
             </section>
             <section id="game">
                 <h2>Toybox Tactics</h2>
@@ -60,15 +61,15 @@
                 </div>
             </section>
             <section id="about">
-                <h2>About Us</h2>
-                <p>We are a passionate team of game developers dedicated to creating unique and engaging games.</p>
+                <h2>Meet The Management!</h2>
+                <p>We are a passionate team of game developers dedicated to creating fun gaming experiences.</p>
                 <ul class="profiles">
                     <li *ngFor="let profile of profiles" class="profiles"><img [src]="profile.image"><p>{{profile.text}}</p></li>
                 </ul>
             </section>
             <section id="contact" style="background-image: url('shore.jpg');">
                 <h2>Contact Us!</h2>
-                <p>Email: tidalrushdigital&commat;gmail.com</p>
+                <p>tidalrushdigital&commat;gmail.com</p>
                 <ul class="socials">
                     <li class="socials"><a href="https://www.twitter.com"><img src="X.svg" alt="X"></a></li>
                     <li class="socials"><a href="https://www.instagram.com"><img src="instagram.svg" alt="Instagram"></a></li>

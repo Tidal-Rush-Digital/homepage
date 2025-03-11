@@ -9,6 +9,6 @@ export default `<!doctype html>
 <link rel="stylesheet" href="styles-5INURTSO.css"></head>
 <body ngcm="">
   <app-root ngskiphydration=""></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-O3NYMBRD.js" type="module"></script></body>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-GG33HD5V.js" type="module"></script></body>
 </html>
 `;

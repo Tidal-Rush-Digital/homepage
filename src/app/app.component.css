@@ -93,6 +93,20 @@ section:not(:last-child) {
   border-bottom: 10px solid #ffffff;
 }
 
+.title-container {
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container img {
+  max-height: 50%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 #about {
   background-color: #00bfd8;
   border-bottom: 10px solid #ffffff
@@ -111,6 +125,11 @@ section:not(:last-child) {
   align-items: center;
   background-size: 100%;
   background-position: 2px;
+}
+
+#contact p:hover {
+  cursor: pointer;
+  color: #006eff;
 }
 
 footer {
@@ -227,6 +246,13 @@ a:hover {
   margin-right: 55px;
   margin-left: 15px;
   text-align: center;
+  padding-top: 15px;
+}
+
+.profiles li:not(:last-child) {
+  border-bottom: #ffffff;
+  border-bottom-style: dashed;
+  border-bottom-width: 6px;
 }
 
 .profiles img {

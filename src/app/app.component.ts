@@ -89,7 +89,7 @@ export class AppComponent {
   slides: Slide[] = [
     {
       image: 'Matthew_TBT_TitleScreen_TextAndBackground.png',
-      text: "A tactics game that's both unpredictable and controlled. Rolling plans with changing unit abilities: move, attack, and reroll your units\' actions for an opportunity at greatness. For strategy noobs and vets alike, take your chance and roll the dice in Toybox Tactics."
+      text: "A family friendly toy tactics game that\’s both unpredictable and controlled. Command one of the three toy factions, adapt to changing circumstances, and manage the risk of dice-based unit abilities. For strategy noobs and vets alike, take your chance and roll the dice in… Toybox Tactics."
     },
     {
       image: 'ToyboxTacticsVerbs30X.gif', // Replace with your image paths
@@ -97,7 +97,7 @@ export class AppComponent {
     },
     {
       image: 'EpicGamerScreenshot.png', // Replace with your image paths
-      text: 'Choose from three distinct forces: the Prehistoric Tribe, a hardy alliance of domesticated dinosaurs and powerful cavemen; the Futurists, a high-tech army of swift mechs and soldiers reliant on supply trucks; or the Necro-Plushies, a relentless horde of undead plush toys led by the formidable Ester [pictured].'
+      text: 'Choose from three distinct factions: the Prehistoric Tribe, a hardy alliance of domesticated dinosaurs and powerful cavemen; the Futurists, a high-tech army of swift mechs and Sci-Fi soldiers that live and die by their supply trucks; or the Necro-Plushies, a relentless horde of undead plush toys led by the formidable necromancer Ester [pictured].'
     }
   ];
 
@@ -111,15 +111,15 @@ export class AppComponent {
   profiles: Profile[] = [
     {
       image: 'Jack.png',
-      text: ''
+      text: 'Jack Horvath. Co-Founder of Tidal Rush Digital, Director of Business Operations, Chief Executive Officer.'
     },
     {
       image: 'Zach.jpg', // Replace with your image paths
-      text: 'Zach Bio.'
+      text: 'Zach Jones. Co-Founder of Tidal Rush Digital, Director of Software and IT, Chief Technology Officer. (this is his cat)'
     },
     {
       image: 'Justin.jpg', // Replace with your image paths
-      text: 'Justin Bio.'
+      text: 'Justin Hay. Co-founder of Tidal Rush Digital, Creative Lead and Producer on Toybox Tactics, Chief Product Officer.'
     }
   ];
 }
