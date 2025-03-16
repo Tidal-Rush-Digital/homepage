@@ -129,6 +129,10 @@ section:not(:last-child) {
   background-repeat: no-repeat;
 }
 
+#contact p {
+  color:black;
+}
+
 #contact p:hover {
   cursor: pointer;
   color: #006eff;

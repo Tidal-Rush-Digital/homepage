@@ -115,7 +115,7 @@ export class AppComponent {
     },
     {
       image: 'Zach.jpg', // Replace with your image paths
-      text: 'Zach Jones. Co-Founder of Tidal Rush Digital, Director of Software and IT, Chief Technology Officer. (this is his cat)'
+      text: 'Zach Jones. Co-Founder of Tidal Rush Digital, Director of Software and IT, Chief Technology Officer.'
     },
     {
       image: 'Justin.jpg', // Replace with your image paths
